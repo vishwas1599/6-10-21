@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSFunctionwithBUttoN</title>
+</head>
+<body>
+Enter n1:<input type="text" id="n1" value="0"> <br>
+Enter n2:<input type="text" id="n2" value="0"> <br>
+<button type="button" id="button1" onclick="sum()">Add</button>
+<button type="button" id="button2" onclick="sub()">Subtract</button>
+<button type="button" id="button3" onclick="mul()">Multiply</button>
+<button type="button" id="button4" onclick="div()">Div</button>
+<h2 id="result"></h2>
+<h2 id="result1"></h2>
+<h2 id="result2"></h2>
+<h2 id="result3"></h2>
+<script>
+    function sum()
+    {
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    let sum=parseInt(n1)+parseInt(n2);
+    document.getElementById("result").innerHTML="add is="+sum;
+     <!--document.write("sum is "+sum);-->
+    }
+    function sub()
+    {
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    let sub=parseInt(n1)-parseInt(n2);
+    document.getElementById("result1").innerHTML="sub is="+sub;
+    }
+    function mul()
+    {
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    let mul=parseInt(n1)*parseInt(n2);
+    document.getElementById("result2").innerHTML="mul is="+mul;
+    }
+    function div()
+    {
+    var n1=document.getElementById("n1").value;
+    var n2=document.getElementById("n2").value;
+    let div=parseInt(n1)/parseInt(n2);
+    document.getElementById("result3").innerHTML="div is="+div;
+    }
+
+</script>
+</body>
+</html>
